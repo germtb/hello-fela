@@ -47,8 +47,12 @@
 		"test": "node scripts/test.js --env=jsdom"
 	},
 	"jest": {
-		"collectCoverageFrom": ["src/**/*.{js,jsx,mjs}"],
-		"setupFiles": ["<rootDir>/config/polyfills.js"],
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx,mjs}"
+		],
+		"setupFiles": [
+			"<rootDir>/config/polyfills.js"
+		],
 		"testMatch": [
 			"<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
 			"<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
@@ -60,7 +64,9 @@
 			"^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
 			"^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
 		},
-		"transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
+		"transformIgnorePatterns": [
+			"[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+		],
 		"moduleFileExtensions": [
 			"web.js",
 			"mjs",
@@ -72,9 +78,15 @@
 		]
 	},
 	"babel": {
-		"presets": ["react-app"]
+		"presets": [
+			"react-app"
+		]
 	},
 	"eslintConfig": {
 		"extends": "react-app"
+	},
+	"devDependencies": {
+		"css-loader": "^0.28.7",
+		"postcss-loader": "^2.0.9"
 	}
 }
